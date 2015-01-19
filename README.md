@@ -1,3 +1,7 @@
+<a href="http://travis-ci.org/alxsad/stack-ip-firewall"><img src="https://secure.travis-ci.org/alxsad/funphp.png" alt="Build
+Status" style="max-width:100%;"></a>
+<a href="https://packagist.org/packages/alxsad/stack-ip-firewall"><img src="https://poser.pugx.org/alxsad/stack-ip-firewall/v/stable.png" alt="Latest Stable Version" style="max-width:100%;"></a>
+
 # IpFirewall middleware
 [Stack](http://stackphp.com) middleware to filtering IP.
 
