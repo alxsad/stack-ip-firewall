@@ -1,0 +1,8 @@
+- name: update apt repo
+  apt: update_cache=yes
+
+- name: install ansible dependencies
+  apt: name={{ item }} state=latest
+  with_items:
+    - curl
+    - python-pycurl

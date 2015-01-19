@@ -1,0 +1,18 @@
+---
+- hosts: vagrant
+
+  vars:
+    user: vagrant
+    path: /vagrant
+    name: stack-ip-firewall
+
+  roles:
+    - common
+    - php
+
+  tasks:
+
+    - name: install vendors
+      shell: >
+        yes '' | php composer.phar install --dev
+        chdir={{path}}

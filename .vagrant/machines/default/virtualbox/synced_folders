@@ -1,0 +1,1 @@
+{"nfs":{"vagrant-root":{"id":"vagrant-root","nfs":true,"guestpath":"/vagrant","hostpath":"/Users/alex.davidovich/Projects/stack-ip-firewall","disabled":false,"type":"nfs","map_uid":502,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"232907939"}}}

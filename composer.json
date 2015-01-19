@@ -1,0 +1,30 @@
+{
+  "name" : "alxsad/stack-ip-firewall",
+  "license" : "MIT",
+  "type" : "library",
+  "description" : "Stack middleware for filtering IP",
+  "keywords" : [
+    "stack",
+    "stack middleware",
+    "ip firewall"
+  ],
+  "require" : {
+    "symfony/http-foundation" : "~2.6",
+    "symfony/http-kernel" : "~2.6",
+    "piwik/network": "dev-master",
+    "lstrojny/functional-php": "1.0.*@dev",
+    "php" : ">=5.4"
+  },
+  "require-dev" : {
+    "stack/builder" : "~1.0",
+    "phpunit/phpunit" : "~4.4"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Alxsad\\Stack\\" : "src/"
+    }
+  },
+  "config" : {
+    "bin-dir" : "bin"
+  }
+}
