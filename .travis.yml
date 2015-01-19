@@ -1,0 +1,13 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - hhvm
+
+before_script:
+  - php composer.phar self-update
+  - php composer.phar install --no-interaction --dev
+
+script: bin/phpunit
