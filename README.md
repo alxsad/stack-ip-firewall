@@ -26,7 +26,6 @@ $kernel = new AppKernel('dev', true);
 $kernel->loadClassCache();
 
 $stack = (new Stack\Builder())->push('Alxsad\Stack\IpFirewall', [
-  '86.57.200.100/25',
   '192.168.1.*',
   '192.168.10.10',
 ]);
