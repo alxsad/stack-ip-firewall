@@ -7,7 +7,6 @@ class IpFirewallTest extends \PHPUnit_Framework_TestCase
      * @var array
      */
     private $whiteList = [
-        '86.57.200.100/25',
         '192.168.1.*',
         '192.168.10.10',
     ];
@@ -72,9 +71,6 @@ class IpFirewallTest extends \PHPUnit_Framework_TestCase
     public function validIpProvider()
     {
         return [
-            ['86.57.200.1'],
-            ['86.57.200.100'],
-            ['86.57.200.126'],
             ['192.168.1.0'],
             ['192.168.1.100'],
             ['192.168.1.255'],
@@ -85,8 +81,6 @@ class IpFirewallTest extends \PHPUnit_Framework_TestCase
     public function invalidIpProvider()
     {
         return [
-            ['86.57.199.255'],
-            ['86.57.200.128'],
             ['192.168.0.255'],
             ['192.168.2.0'],
             ['192.168.10.9'],
